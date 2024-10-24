@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+$bg-color: #000;
+$hl-color: #fff;
+$p-color: #eee;
+$p-font: "Ubuntu", sans-serif;
+
+body{
+    padding: 0;
+    margin: 0;
+    background-color: #000;
+    color: $hl-color;
+    font-family: $p-font;
+    a{
+        text-decoration: none;
+        color: $p-color;
+    }
+}
+
+// home page
+.display-genres-container{
+    display: flex;
+    flex-direction: row;
+    div{
+        display: flex;
+        margin-top: 20px;
+        div{
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            width: 185px;
+            img{
+                padding-top: 6px;
+                max-width: 185px;
+            }
+            span{
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+            }
+        }
+        div:hover{
+            img{
+                opacity: 0.8;
+                transition: 0.18s;
+            }
+            span{
+                color: $hl-color;
+                transition: 0.18s;
+            }
+        }
+    }
+}
+.genre-titel{
+    position: relative;
+    top: 0;
+    left: 20px;
+}
+
+// movie details page
+.details-wrap{
+    position: absolute;
+    width: 1280px;
+    height: 720px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+.details-wrap img{
+    width: 1280px;
+}
+.darken-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1280px;
+    height: 720px;
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.9) 70%);
+    .details-text-container{
+        position: absolute;
+        bottom: 0;
+        width: auto;
+        padding: 20px;
+        h2{
+            text-align: left;
+            color: $hl-color;
+            font-size: 32px;
+        }
+        p{
+            text-align: left;
+            color: $p-color;
+        }
+        span{
+            text-align: left;
+            color: $p-color;
+            margin-right: 32px;
+        }
+    }
+}

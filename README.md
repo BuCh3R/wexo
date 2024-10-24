@@ -1,29 +1,19 @@
-# display-movies
+################## Wexo code challenge ##################
 
-This template should help get you started developing with Vue 3 in Vite.
+Application:
+Fetch TMDB api
+Display genre and showcase movies
+Display movie details
 
-## Recommended IDE Setup
+################## Technologies ##################
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+Vue.js
+Axios
+Sass
 
-## Customize configuration
+################## To run application ##################
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
-
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
+1. Make sure to have the latest version of node.js - https://nodejs.org/en
+2. Clone the GitHub repository to your local machine
+3. Open cli and navigate to the folder where you cloned the repository to
+4. type "npm install" followed by "npm run dev"
